@@ -1236,6 +1236,12 @@ i.home-product-item__like-icon-fill {
     color: var(--white-color);
 }
 
+/* pagination */
+.page-controller-home-product {
+    margin-top: 40px;
+    margin-bottom: 32px;
+}
+
 
 
 
