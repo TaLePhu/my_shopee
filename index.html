@@ -5,16 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shoppee v1</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/grid.css">
     <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/reponsive.css">
     <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.7.2-web/css/all.min.css">
 </head>
 <body>
     <div class="app">
         <header class="header">
-            <div class="grid">
+            <div class="grid wide">
                 <!-- navbar -->
-                <nav class="navbar">
+                <nav class="navbar hide-on-mobile-tablet">
                     <ul class="navbar-list">
                         <li class="navbar-list__item navbar-list__item--separate navbar-list__item--has-qr">
                             Vào cửa hàng trên ứng dụng Shoppeev1
@@ -130,7 +132,7 @@
 
                 <!-- header-with-search -->
                 <div class="header-with-search">
-                    <div class="header__logo">
+                    <div class="header__logo hide-on-tablet">
                         <a href="/" class="header__logo-link">
                             <svg viewBox="0 0 192 65" class="header__logo-img">
                                 <g fill-rule="evenodd">
@@ -253,7 +255,7 @@
         </header>
 
         <div class="app__container">
-            <div class="grid">
+            <div class="grid wide">
                 <div class="grid__row">
                     <div class="grid__column-2">
                         <nav class="category">
@@ -277,7 +279,7 @@
                     </div>
                     <!-- app product -->
                     <div class="grid__column-10">
-                        <div class="home-filter">
+                        <div class="home-filter hide-on-mobile-tablet">
                             <div class="home-filter__left">
                                 <span class="home-filter__label">Sắp xếp theo</span>
                                 <button class="btn">Phổ biến</button>
@@ -746,7 +748,7 @@
         </div>
 
         <footer class="footer">
-            <div class="grid">
+            <div class="grid wide">
                 <div class="grid__row">
                     <div class="grid__column-2-4">
                         <h3 class="footer__heading">Hỗ trợ khách hàng</h3>
