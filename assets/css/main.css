@@ -2,7 +2,7 @@
 
 
 .app {
-
+    overflow-x: hidden
 }
 
 .header {
@@ -452,14 +452,30 @@
     align-items: center;
 }
 
+.header__mobile-search {
+    display: none;
+}   
+
+.header__mobile-search-icon {
+    font-size: 2rem;
+    color: var(--white-color);
+}
+
+
 .header__logo {
     height: 50px;
     width: 162px;
+
+}
+
+.header__search-checkbox:checked ~ .header__search {
+    display: flex;
 }
 
 .header__logo-link {
     color: transparent;
     text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .header__logo-img {
@@ -487,6 +503,7 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .header__cart-icon {
@@ -1088,6 +1105,63 @@
     font-size: 1.8rem;
     color: inherit;
 }
+
+/* mobile-category */
+.mobile-category {
+    display: none;
+}
+
+.mobile-category__list {
+    display: flex;
+    list-style: none;
+    max-width: 100%;
+    overflow-x: auto;
+    margin-top: 12px;
+}
+
+.mobile-category__list::-webkit-scrollbar {
+    display: none;
+}
+
+.mobile-category__item {
+    flex-shrink: 0;
+    margin-right: 12px;
+}
+
+.mobile-category__item:nth-of-type(3n + 1) .mobile-category__link{
+    background-color: #87AFD8;
+}
+
+.mobile-category__item:nth-of-type(3n + 2) .mobile-category__link{
+    background-color: #76b9bd;
+}
+
+.mobile-category__item:nth-of-type(3n + 3) .mobile-category__link{
+    background-color: #88CF81;
+}
+
+.mobile-category__link {
+    --line-height: 2rem;
+    text-decoration: none;
+    color: var(--white-color);
+    font-size: 1.4rem;
+    font-weight: 200;
+    line-height: var(--line-height);
+    height: calc(var(--line-height) * 2);
+    text-align: center;
+    width: 110px;
+    display: block;
+    border-radius: 5px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    user-select: none;
+    -webkit-user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    padding: 0px 6px;
+}
+
 
 /* product item */
 .home-product {
